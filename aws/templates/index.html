@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>ML Project</title>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="static/stylesheets/style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			
+			<div class="header">
+				<br>
+				<h3 class="text-muted"><center>Comparison: K-NN v/s Naive Bayes</center></h3>
+			</div>
+			
+			<hr>
+			
+			<div>			
+				<form action="" method="post" enctype="multipart/form-data">
+					<center><br>
+						Upload CSV data file : 
+						<input type="file" name="file" multiple>
+						<br><br><br>
+						<input type="radio" name="task" value="classification" checked> Classification&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="task" value="regression"> Regression
+						<br><br><br>
+						Enter k for k-fold cross-validation :
+						<input type="number" name="kfcv" min="1" max="10">
+						<br><br><br>
+						<input type="submit" value="Start Comparison">
+					</center>
+				</form>
+			</div>
+			
+		</div>
+	</body>
+</html>
